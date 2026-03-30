@@ -71,12 +71,18 @@ todo
 
 #### Вопросы
 1. Выполните nslookup, чтобы получить IP-адрес какого-либо веб-сервера в Азии
-   - <!-- todo -->
+   - <img width="750" height="269" alt="изображение" src="https://github.com/user-attachments/assets/eb77e725-7f52-44dc-af4e-e4dbf22a6577" />
+   
 2. Выполните nslookup, чтобы определить авторитетные DNS-серверы для какого-либо университета в Европе
-   - <!-- todo -->
+   - <img width="716" height="264" alt="изображение" src="https://github.com/user-attachments/assets/7fbe317c-f132-4b01-b53a-619c4301bf75" />
+   
 3. Используя nslookup, найдите веб-сервер, имеющий несколько IP-адресов. Сколько IP-адресов имеет веб-сервер вашего учебного заведения?
-   - <!-- todo -->
-   - <!-- todo -->
+   - <img width="750" height="269" alt="изображение" src="https://github.com/user-attachments/assets/eb77e725-7f52-44dc-af4e-e4dbf22a6577" />
+   
+   - Один
+     <img width="521" height="191" alt="изображение" src="https://github.com/user-attachments/assets/e50a0e45-52a0-4e07-98da-96424aa58e9c" />
+
+
 
 ### Б. DNS-трассировка www.ietf.org (3 балла)
 
@@ -90,31 +96,45 @@ todo
 4. Зайдите на страницу www.ietf.org в браузере.
 5. Остановите захват пакетов.
 
+<img width="1901" height="337" alt="изображение" src="https://github.com/user-attachments/assets/025387c3-5506-4dfe-8bee-3b457e00807a" />
+
 #### Вопросы
 1. Найдите DNS-запрос и ответ на него. С использованием какого транспортного протокола
    они отправлены?
-   - <!-- todo -->
+   - TCP
 2. Какой порт назначения у запроса DNS?
-   - <!-- todo -->
+   - 53
 3. На какой IP-адрес отправлен DNS-запрос? Используйте ipconfig для определения IP-адреса
    вашего локального DNS-сервера. Одинаковы ли эти два адреса?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 192.168.0.1
+   - Одинаковы  
+   <img width="733" height="170" alt="изображение" src="https://github.com/user-attachments/assets/2d6b7d46-ee64-4eeb-890a-f7e1be8b95b8" />
+   
 4. Проанализируйте сообщение-запрос DNS. Запись какого типа запрашивается? Содержатся
    ли в запросе какие-нибудь «ответы»?
-   - <!-- todo -->
-   - <!-- todo -->
+   - HTTPS и Type A
+     <img width="469" height="271" alt="изображение" src="https://github.com/user-attachments/assets/cd3f554f-baae-400f-9d45-a3518cc9a534" />
+     
+     <img width="423" height="272" alt="изображение" src="https://github.com/user-attachments/assets/9bf0eca5-ff25-47c5-9599-4678dab597eb" />
+     
+   - Нет
 5. Проанализируйте ответное сообщение DNS. Сколько в нем «ответов»? Что содержится в
    каждом?
-   - <!-- todo -->
-   - <!-- todo -->
-6. Посмотрите на последующий TCP-пакет с флагом SYN, отправленный вашим компьютером.
+   <img width="573" height="314" alt="изображение" src="https://github.com/user-attachments/assets/40e05a52-4d93-48ec-bd5a-bbc6c23730aa" />
+   
+   - 2
+   - <img width="662" height="361" alt="изображение" src="https://github.com/user-attachments/assets/9a1379f7-b24c-4826-bcc6-a789a077142d" />
+   
+7. Посмотрите на последующий TCP-пакет с флагом SYN, отправленный вашим компьютером.
    Соответствует ли IP-адрес назначения пакета с SYN одному из адресов, приведенных в
    ответном сообщении DNS?
-   - <!-- todo -->
-7. Веб-страница содержит изображения. Выполняет ли хост новые запросы DNS перед
+   - Да
+8. Веб-страница содержит изображения. Выполняет ли хост новые запросы DNS перед
    загрузкой этих изображений?
-   - <!-- todo -->
+   - Да
+     <img width="1266" height="44" alt="изображение" src="https://github.com/user-attachments/assets/742dc7ac-5e82-4796-8a6f-55c7dafa04f0" />
+     
+     <img width="1292" height="52" alt="изображение" src="https://github.com/user-attachments/assets/1fe06849-eb32-4bf6-a61f-cfb3b512866d" />
 
 ### В. DNS-трассировка www.spbu.ru (2 балла)
 
@@ -124,63 +144,87 @@ todo
 3. Остановите захват
 4. Вы увидите несколько пар запрос-ответ DNS. Найдите последнюю пару, все вопросы будут относиться к ней
    
+<img width="1916" height="220" alt="изображение" src="https://github.com/user-attachments/assets/5678c8c8-e6be-4823-b65a-3511a0b23183" />
+
 #### Вопросы
 1. Каков порт назначения в запросе DNS? Какой порт источника в DNS-ответе?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 53
+     <img width="961" height="350" alt="изображение" src="https://github.com/user-attachments/assets/150b14e5-1f65-4142-8a63-ed22f1684ffb" />
+     
+   - 53
+     <img width="932" height="611" alt="изображение" src="https://github.com/user-attachments/assets/dc97d1f1-c384-4794-908d-3dd23664c7fa" />
+     
 2. На какой IP-адрес отправлен DNS-запрос? Совпадает ли он с адресом локального DNS-сервера, установленного по умолчанию?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 192.168.0.1
+   - Да
 3. Проанализируйте сообщение-запрос DNS. Запись какого типа запрашивается? Содержатся
    ли в запросе какие-нибудь «ответы»?
-   - <!-- todo -->
-   - <!-- todo -->
+   - Type AAAA
+   - Нет
 4. Проанализируйте ответное сообщение DNS. Сколько в нем «ответов»? Что содержится в каждом?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 1
+     <img width="583" height="191" alt="изображение" src="https://github.com/user-attachments/assets/d84f6c9d-2429-4571-bf96-fe57c5db4dd8" />
 
 ### Г. DNS-трассировка nslookup –type=NS (1 балл)
 Повторите все шаги по предварительной подготовке из Задания B, но теперь для команды `nslookup –type=NS spbu.ru`
 
+<img width="1916" height="171" alt="изображение" src="https://github.com/user-attachments/assets/35b7c04f-5075-4590-b21b-79e234c31b18" />
+
 #### Вопросы
 1. На какой IP-адрес отправлен DNS-запрос? Совпадает ли он с адресом локального DNS-сервера, установленного по умолчанию?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 192.168.0.1
+     <img width="954" height="468" alt="изображение" src="https://github.com/user-attachments/assets/c06c3677-6a29-49f6-84ae-a73e63632019" />
+     
+   - Да
 2. Проанализируйте сообщение-запрос DNS. Запись какого типа запрашивается? Содержатся ли в запросе какие-нибудь «ответы»?
-   - <!-- todo -->
-   - <!-- todo -->
+   - Type NS
+   - Нет
 3. Проанализируйте ответное сообщение DNS. Имена каких DNS-серверов университета в
    нем содержатся? А есть ли их адреса в этом ответе?
-   - <!-- todo -->
-   - <!-- todo -->
+   - ns.pu.ru, ns2.pu.ru
+     <img width="536" height="362" alt="изображение" src="https://github.com/user-attachments/assets/35da9999-61f4-47ef-b1f4-3267aff27b70" />
+   
+   - Нет
 
 ### Д. DNS-трассировка nslookup www.spbu.ru ns2.pu.ru (1 балл)
 Снова повторите все шаги по предварительной подготовке из Задания B, но теперь для команды `nslookup www.spbu.ru ns2.pu.ru`.
 Запись `nslookup host_name dns_server` означает, что запрос на разрешение доменного имени `host_name` пойдёт к `dns_server`.
 Если параметр `dns_server` не задан, то запрос идёт к DNS-серверу по умолчанию (например, к локальному).
 
+<img width="1914" height="314" alt="изображение" src="https://github.com/user-attachments/assets/b026e07d-bd4d-41ab-9975-d1d1dd9c30d8" />
+
 #### Вопросы
 1. На какой IP-адрес отправлен DNS-запрос? Совпадает ли он с адресом локального DNS-сервера, установленного по умолчанию? 
    Если нет, то какому хосту он принадлежит?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 195.70.196.210
+   - Нет
+     <img width="427" height="147" alt="изображение" src="https://github.com/user-attachments/assets/ce72318a-23c9-462f-aec6-09f0030a0f9d" />
+
 2. Проанализируйте сообщение-запрос DNS. Запись какого типа запрашивается? Содержатся
    ли в запросе какие-нибудь «ответы»?
-   - <!-- todo -->
-   - <!-- todo -->
+   - Type AAAA
+   - Нет
 3. Проанализируйте ответное сообщение DNS. Сколько в нем «ответов»? Что содержится в
    каждом?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 1
+   - <img width="607" height="192" alt="изображение" src="https://github.com/user-attachments/assets/8074ba05-84ba-4fa9-8683-e4c74a13052c" />
 
 ### Е. Сервисы whois (2 балла)
 1. Что такое база данных whois?
-   - <!-- todo -->
+   - Сервис, используемый для получения регистрационных данных о владельцах доменных имён, IP-адресов и автономных систем 
 2. Используя различные сервисы whois в Интернете, получите имена любых двух DNS-серверов. 
    Какие сервисы вы при этом использовали?
-   - <!-- todo -->
-   - <!-- todo -->
+   - gail.ns.cloudflare.com., dns1.yandex.net.
+     <img width="661" height="642" alt="изображение" src="https://github.com/user-attachments/assets/d1063e97-02de-4348-b4cf-3961cf6dac7b" />
+     
+     <img width="756" height="715" alt="изображение" src="https://github.com/user-attachments/assets/2051de5f-29fa-4ba9-b7db-4e945a863797" />
+
+   - https://www.nic.ru/whois/, https://www.reg.ru/whois/
 3. Используйте команду nslookup на локальном хосте, чтобы послать запросы трем конкретным
    серверам DNS (по аналогии с Заданием Д): вашему локальному серверу DNS и двум DNS-серверам,
    найденным в предыдущей части.
-   - <!-- todo -->
+   - <img width="499" height="408" alt="изображение" src="https://github.com/user-attachments/assets/72a7c47e-a63b-4fdb-a643-6a91eecebad3" />
+
+   <img width="621" height="267" alt="изображение" src="https://github.com/user-attachments/assets/ca19ca0c-71ba-4595-9220-d217e0c92824" />
+
+
