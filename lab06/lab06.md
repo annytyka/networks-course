@@ -76,18 +76,14 @@ todo
 
 #### Демонстрация работы
 
-Подключение к серверу
+Подключение к серверу и просмотр файлов
 
-<img width="411" height="157" alt="изображение" src="https://github.com/user-attachments/assets/bd58e3b7-d27a-41db-9c22-58976ebc6d3f" />
+<img width="844" height="548" alt="изображение" src="https://github.com/user-attachments/assets/745e01c0-f5cb-41d6-9895-830d47baaa5b" />
 
-Просмотр файлов
-
-<img width="831" height="377" alt="изображение" src="https://github.com/user-attachments/assets/d35c750a-3b17-4dfb-9c77-15d636821405" />
 
 Загрузка и скачивание
 
-<img width="583" height="288" alt="изображение" src="https://github.com/user-attachments/assets/aba209e4-c0a1-4983-9958-6bba1321b114" />
-
+<img width="587" height="355" alt="изображение" src="https://github.com/user-attachments/assets/262db383-72f6-471f-8298-7b853d58c67c" />
 
 
 ### GUI FTP клиент (4 балла)
