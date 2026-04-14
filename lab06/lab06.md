@@ -17,13 +17,13 @@
    информации о содержимом полей в данном пакете.
    - 2 байта на каждое
 
-  <img width="1787" height="351" alt="изображение" src="https://github.com/user-attachments/assets/faf9aa53-de17-495d-9990-080795639c24" />
+   <img width="1787" height="351" alt="изображение" src="https://github.com/user-attachments/assets/faf9aa53-de17-495d-9990-080795639c24" />
   
-  <img width="1782" height="344" alt="изображение" src="https://github.com/user-attachments/assets/f292b397-b3a1-46fb-8609-9c66236660ad" />
+   <img width="1782" height="344" alt="изображение" src="https://github.com/user-attachments/assets/f292b397-b3a1-46fb-8609-9c66236660ad" />
   
-  <img width="1778" height="354" alt="изображение" src="https://github.com/user-attachments/assets/28d2bf05-691c-4f0d-be69-2a297285bbe1" />
+   <img width="1778" height="354" alt="изображение" src="https://github.com/user-attachments/assets/28d2bf05-691c-4f0d-be69-2a297285bbe1" />
   
-  <img width="1779" height="355" alt="изображение" src="https://github.com/user-attachments/assets/812daa4a-c894-4ec0-a8b6-37ba0268c0c3" />
+   <img width="1779" height="355" alt="изображение" src="https://github.com/user-attachments/assets/812daa4a-c894-4ec0-a8b6-37ba0268c0c3" />
 
 3. Значение в поле Length (Длина) – это длина чего?
    - Всего сегмента
@@ -75,7 +75,20 @@ todo
 Бонус: Не используйте готовые библиотеки для работы с FTP (например, ftplib для Python), а реализуйте решение на сокетах **(+3 балла)**.
 
 #### Демонстрация работы
-todo
+
+Подключение к серверу
+
+<img width="411" height="157" alt="изображение" src="https://github.com/user-attachments/assets/bd58e3b7-d27a-41db-9c22-58976ebc6d3f" />
+
+Просмотр файлов
+
+<img width="831" height="377" alt="изображение" src="https://github.com/user-attachments/assets/d35c750a-3b17-4dfb-9c77-15d636821405" />
+
+Загрузка и скачивание
+
+<img width="583" height="288" alt="изображение" src="https://github.com/user-attachments/assets/aba209e4-c0a1-4983-9958-6bba1321b114" />
+
+
 
 ### GUI FTP клиент (4 балла)
 Реализуйте приложение FTP клиента с графическим интерфейсом. НЕ используйте C#.
