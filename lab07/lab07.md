@@ -20,43 +20,84 @@
    файл серверу gaia.cs.umass.edu? Для ответа на вопрос, возможно, проще выбрать http-сообщение
    и рассмотреть информацию TCP-пакета, используемого для передачи этого http-сообщения, 
    в окне деталей заголовка пакета.
-   - <!-- todo -->
+   - 192.168.0.104, 53616
 2. Каков IP-адрес у сервера gaia.cs.umass.edu? Каковы номера портов для отправки и приема
    TCP-сегментов этого соединения?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 128.119.245.12
+   - 80
+   <img width="1920" height="885" alt="изображение" src="https://github.com/user-attachments/assets/faff2be3-1a4f-4d30-9343-02bc12e67a4e" />
+
 3. Какой порядковый номер у SYN TCP-сегмента, который используется для установления
    TCP-соединения между компьютером клиента и сервером gaia.cs.umass.edu? Как
    определяется, что это именно SYN-сегмент?
-   - <!-- todo -->
-   - <!-- todo -->
+   - 0 (relative sequence number), 1512812021 (raw)
+   - флаг SYN равен 1
+   <img width="1919" height="895" alt="изображение" src="https://github.com/user-attachments/assets/b48d0f38-33ac-4fa2-bc79-f2131301e620" />
+
 4. Какой порядковый номер у SYNACK-сегмента, отправленного сервером gaia.cs.umass.edu
    на компьютер клиента в ответ на SYN-сегмент? Какое значение хранится в поле
    подтверждения в SYNACK-сегменте? Как сервер gaia.cs.umass.edu определил это значение?
    Как определяется, что это именно SYNACK-сегмент?
-   - <!-- todo -->
-   - <!-- todo -->
-   - <!-- todo -->
-   - <!-- todo -->
+   - Sequence Number: 0
+   - Acknowledgment Number: 1
+   - Прошлый Sequence Number, увеличенный на 1
+   - Флаги SYN и ACK равны 1
+   <img width="1920" height="923" alt="изображение" src="https://github.com/user-attachments/assets/2fb18d53-162f-4d6a-9ab2-db736dc18c55" />
+
 5. Какой порядковый номер у TCP-сегмента, содержащего команду POST протокола HTTP?
    (для нахождения команды POST вам потребуется проникнуть внутрь поля содержимого
    пакета в нижней части окна Wireshark, чтобы найти сегмент, в поле DATA которого
    хранится значение POST)
-   - <!-- todo -->
+   - 1
+   <img width="1916" height="922" alt="изображение" src="https://github.com/user-attachments/assets/dc61613c-61e3-4f0b-932e-931d547da589" />
+
 6. Рассмотрите TCP-сегмент, содержащий команду POST протокола HTTP, как первый TCP-сегмент 
    соединения. Какие порядковые номера у первых шести сегментов TCP-соединения 
    (включая сегмент, содержащий команду POST протокола HTTP)? Когда был
    отправлен каждый сегмент? Когда был получен ACK-пакет для каждого сегмента?
    Покажите разницу между тем, когда каждый TCP-сегмент был отправлен и когда было
    получено каждое подтверждение, чему равно значение RTT для каждого из 6 сегментов?
-   - <!-- todo -->
-   - <!-- todo -->
-   - <!-- todo -->
-   - <!-- todo -->
+   - 1, 648, 13788, 41528, 97008, 108688
+   - 21.413385300, 21.413844900, 21.608680300, 21.773432100, 21.916351300, 21.916689300
+   - 21.608522900, 21.608522900, 21.773016800, 21.920123100, 22.119672600, 22.119672600
+   - 0.195137600, 0.194678000, 0.164336500, 0.146691000, 0.203321300, 0.202983300
+   ---
+   <img width="1920" height="967" alt="изображение" src="https://github.com/user-attachments/assets/06991fe5-47e2-4497-82ef-e31ccabba365" />
+   
+   <img width="1920" height="920" alt="изображение" src="https://github.com/user-attachments/assets/cf900a2a-91fe-4a4c-92be-38add9c826f5" />
+
+   ---
+   <img width="1919" height="922" alt="изображение" src="https://github.com/user-attachments/assets/06967ba4-8e11-4358-b0bb-73da20d63b16" />
+
+   <img width="1920" height="923" alt="изображение" src="https://github.com/user-attachments/assets/731b8b81-6024-4c4d-9228-97629c1cf865" />
+
+   ---
+   <img width="1920" height="963" alt="изображение" src="https://github.com/user-attachments/assets/8b6076f0-bbf7-46c3-9f09-b8b62eaa0745" />
+
+   <img width="1918" height="916" alt="изображение" src="https://github.com/user-attachments/assets/8ed45efb-a1ec-46de-b832-a363f2e322f2" />
+
+   ---
+   <img width="1919" height="923" alt="изображение" src="https://github.com/user-attachments/assets/4cc8c0d0-4071-4955-a007-2265aa41426a" />
+
+   <img width="1920" height="928" alt="изображение" src="https://github.com/user-attachments/assets/52d32f2f-8095-4573-acb4-f20a90a135ab" />
+
+   ---
+   <img width="1920" height="926" alt="изображение" src="https://github.com/user-attachments/assets/d5a09502-9175-4aa4-bff4-e70867ef8b48" />
+
+   <img width="1920" height="912" alt="изображение" src="https://github.com/user-attachments/assets/63b4c990-3b7f-4f95-b154-6ccc650f8f03" />
+
+   ---
+   <img width="1920" height="922" alt="изображение" src="https://github.com/user-attachments/assets/970425f4-1b7d-4c8c-826d-7c08abb22dc1" />
+
+   <img width="1919" height="928" alt="изображение" src="https://github.com/user-attachments/assets/59880905-de29-423f-bca1-ba6556ccda4f" />
+
+
 7. Чему равна пропускная способность (количество байтов, передаваемых в единицу
    времени) для этого TCP-соединения? Объясните, как вы получили это значение.
-   - <!-- todo -->
-   - <!-- todo -->
+   - 131328 / 0.195137600 = 673002 байт/с
+   - Объём данных делить на время передачи
+  
+
 
 ### Работа с Time-Sequence-Graph (Stevens) (2 балла)
 Time-Sequence-Graph (Stevens) (Временная шкала (Стивенса)) – одна из графических утилит
